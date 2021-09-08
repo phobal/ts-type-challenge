@@ -1,0 +1,24 @@
+{
+  "name": "ts-type-challenge",
+  "version": "1.0.0",
+  "description": "TS 国家体操队训练场",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phobal/ts-type-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phobal/ts-type-challengee/issues"
+  },
+  "homepage": "https://github.com/phobal/ts-type-challenge#readme",
+  "devDependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "typescript": "^4.4.2"
+  }
+}
