@@ -32,6 +32,7 @@ type result3 = ((a: boolean) => string | number) & ((a: number) => string);
  * U extends any ? X : Y： 这里把 U 类型处理成 (x: U) => any 的函数类型。
  * T extends (x: infer V) => any ? V : never：这里的 T 就是上一步的函数类型，
  * 如果 extends 成立，则返回 V，此时的 V 必然满足 U & V。
+ * https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html#type-inference-in-conditional-types
  */
 type UnionToIntersection<U> = (U extends any ? (x: U) => any : never) extends (
   x: infer V
