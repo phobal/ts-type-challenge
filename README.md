@@ -150,15 +150,15 @@ type result = ReturnType<typeof add>;
 type result = "name" | 1 | true | null;
 ```
 
-而交叉类型则适用于对象的"合并"，它使用`&`符号进行连接，如下：
+而交叉类型则适用于对象的"合并"，它使用 `&` 符号进行连接，如下：
 
 ```ts
 type result = T & U;
 ```
 
-`T & U`表示一个新的类型，其中这个类型包含`T`和`U`中所有的键，这和`JavaScript`中的`Object.assign()`函数的作用非常类似。
+`T & U` 表示一个新的类型，其中这个类型包含 `T` 和 `U` 中所有的键，这和 `JavaScript` 中的 `Object.assign()` 函数的作用非常类似。
 
-根据交叉类型的概念，我们可以手动封装一个对象的`merge`函数，如下：
+根据交叉类型的概念，我们可以手动封装一个对象的 `merge` 函数，如下：
 
 ```ts
 const obj1 = { name: "AAA" };
@@ -171,7 +171,7 @@ function merge<T, U>(to: T, from: U): T & U {
 }
 
 // 结果：{ name：'AAA'; age: 23; }
-const resutl = merge(obj1, obj2);
+const result = merge(obj1, obj2);
 ```
 
 TS 类型 Merge:
